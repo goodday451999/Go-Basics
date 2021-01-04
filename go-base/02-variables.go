@@ -13,4 +13,6 @@ func main(){
 	
 	x_string := "it's Great"
 	fmt.Println(x_string)
+	
+	fmt.Printf("%T\n", x_float)
 }
