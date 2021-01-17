@@ -17,4 +17,8 @@ func main(){
   y := 3
   sum := doSum(x, y)
   fmt.Println(sum)
+  
+  a := "start"
+  defer fmt.Println(a) // start not end
+  a = "end"
 }
