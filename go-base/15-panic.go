@@ -29,10 +29,10 @@ from main
 
 func accountDetails(userId *int, ifsc *int) {
   defer fmt.Println("defer from func")
-  if userId != nil{
+  if userId == nil{
     panic("userId can't be nil")
   }
-  if ifsc != nil{
+  if ifsc == nil{
     panic("ifsc can't be nil")
   }
   fmt.Println("%d  %d\n", *userId, *ifsc)
@@ -44,7 +44,7 @@ func main() {
   userId := 1112
   //ifsc := 24
   
-  accountDetails(&userId, null)
+  accountDetails(&userId, nil)
   fmt.Prinlnln("from main")
   
 }
