@@ -15,7 +15,7 @@ func CalculateValue(c chan int) {
 }
 
 func main() {
-    fmt.Println("Go Channel Tutorial")
+    fmt.Println("Channel Buffered")
 
     valueChannel := make(chan int, 2)
     defer close(valueChannel)
@@ -29,6 +29,7 @@ func main() {
     time.Sleep(1000 * time.Millisecond)
 }
 /////
+Channel Buffered
 Calculated Random Value: {} 1
 Calculated Random Value: {} 7
 7
