@@ -3,7 +3,11 @@ import (
   "fmt"
 )
 func doSum(x, y int) int{
-  defer fmt.Println("Func doSum execution is done")
+  defer fmt.Println("Func doSum execution is done")  
+  /* acts as LIFO.. Last In First Out
+    To close file
+  */
+  defer fmt.Println("Seems the execution is ended")
   sumAns := x + y
   fmt.Println("Sum is done")
   return sumAns
