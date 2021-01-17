@@ -27,6 +27,7 @@ func main() {
 }
 
 //////
+Channel Unbuffered
 Calculated Random Value: {} 1
 Calculated Random Value: {} 7
 1
